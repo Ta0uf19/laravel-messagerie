@@ -6,6 +6,8 @@
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
 <a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
 </p>
+## Laravel Messenger
+VueJS and Laravel Application Messaging System
 
 ## Installation
 
@@ -17,7 +19,7 @@
   - php artisan key:generate    
 	   *to generate key for laravel app php*
   - php artisan passport:install 
-		   *to generate key for oath passport*
+		   *to generate key for oauth passport / API used by vueJS*
  - chmod -R ug+rwx storage bootstrap/cache  
  - php artisan migrate --seed  
  
