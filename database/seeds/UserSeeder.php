@@ -13,11 +13,11 @@ class UserSeeder extends Seeder
     {
         $faker = Faker\Factory::create(); // générer des pseudo aléatoire
 
-        for($i = 0; $i < 10; $i++) {
+        for ($i = 0; $i < 10; $i++) {
             \Illuminate\Support\Facades\DB::table('users')->insert([
-                'name' => $faker->firstName,
-                'email' => $faker->email,
-                'password' => bcrypt('0000') //mot de passe par défaut
+                'name'     => $faker->firstName,
+                'email'    => $faker->email,
+                'password' => bcrypt('0000'), //mot de passe par défaut
             ]);
         }
     }

@@ -18,7 +18,7 @@ use Illuminate\Http\Request;
 Route::middleware('auth:api')->get('/user', function (Request $request) {
     return $request->user();
 });
-Route::group(['middleware' => ['auth:api']], function() {
+Route::group(['middleware' => ['auth:api']], function () {
     Route::get('/messagerie/users', 'Api\MessagesController@index');
     Route::get('/messagerie/user/{user}', 'Api\MessagesController@show');
     Route::post('/messagerie/user/{user}', 'Api\MessagesController@sendMessage');
