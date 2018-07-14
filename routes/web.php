@@ -17,8 +17,8 @@ Route::get('/', function () {
 
 Auth::routes();
 //Controller
-Route::get('/home', function() {
-   return redirect()->route('messages');
+Route::get('/home', function () {
+    return redirect()->route('messages');
 });
 Route::post('/messages/{user}', 'MessagesController@sendMessage');
 Route::get('/messages', 'MessagesController@index')->name('messages');
